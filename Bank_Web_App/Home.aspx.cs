@@ -13,5 +13,18 @@ namespace Bank_Web_App
         {
 
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedIndex.Equals(1))
+            {
+                Response.Redirect("Customer_Login.aspx");
+            }
+            else if (DropDownList1.SelectedIndex.Equals(2))
+            {
+                Response.Redirect("Employee_Login.aspx");
+            }
+            
+        }
     }
 }
