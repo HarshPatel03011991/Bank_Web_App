@@ -14,6 +14,7 @@
         .auto-style4 {
             width: 277px;
             height: 25px;
+            text-align: center;
         }
     .auto-style5 {
         width: 80px;
@@ -48,6 +49,7 @@
         .auto-style12 {
             width: 290px;
             height: 25px;
+            text-align: right;
         }
         .auto-style13 {
             height: 25px;
@@ -113,7 +115,7 @@
         <tr>
             <td class="auto-style2">Country</td>
             <td class="auto-style6">
-                <asp:DropDownList ID="DropDownListCountry" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="193px" CssClass="auto-style10">
+                <asp:DropDownList ID="DropDownListCountry" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px" CssClass="auto-style10">
                     <asp:ListItem>Select Country</asp:ListItem>
                     <asp:ListItem>CANADA</asp:ListItem>
                     <asp:ListItem>INDIA</asp:ListItem>
@@ -135,15 +137,28 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style12"></td>
-            <td class="auto-style4"></td>
-            <td class="auto-style13"></td>
+            <td class="auto-style12">Mobile No</td>
+            <td class="auto-style4">
+                <asp:TextBox ID="TextBoxMobile" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px"></asp:TextBox>
+            </td>
+            <td class="auto-style13">
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBoxMobile" ErrorMessage="Mobile Number must be need" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBoxMobile" ErrorMessage="Enter valid Mobile Number" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red" ValidationExpression="^([0-9]{1})([0-9]{9})$"></asp:RegularExpressionValidator>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style6">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style6">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" Height="40px" Width="80px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="Reset1" class="auto-style5" type="reset" value="reset" /></td>
             <td>&nbsp;</td>
         </tr>

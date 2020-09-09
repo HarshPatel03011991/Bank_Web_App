@@ -23,7 +23,7 @@ namespace Bank_Web_App
                 Guid newGuID = Guid.NewGuid();
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
                 conn.Open();
-                string insert = " insert into CustomerDetails (id,UserName,Email,Password,Country,Balance) values (@id,@uname,@email,@password,@country,@balance)";
+                string insert = " insert into CustomerDetails (id,UserName,Email,Password,Country,Balance,MobileNo) values (@id,@uname,@email,@password,@country,@balance,@mobileno)";
                 SqlCommand com = new SqlCommand(insert, conn);
                 com.Parameters.AddWithValue("@id", newGuID.ToString());
                 com.Parameters.AddWithValue("@uname", TextBoxUN.Text);
@@ -31,6 +31,7 @@ namespace Bank_Web_App
                 com.Parameters.AddWithValue("@password", TextBoxPass.Text);
                 com.Parameters.AddWithValue("@country", DropDownListCountry.SelectedItem.ToString());
                 com.Parameters.AddWithValue("@balance", TextBoxBalance.Text);
+                com.Parameters.AddWithValue("@mobileno", TextBoxMobile.Text);
                 com.ExecuteNonQuery();
                 
                 Response.Write("your registration is successfull");
