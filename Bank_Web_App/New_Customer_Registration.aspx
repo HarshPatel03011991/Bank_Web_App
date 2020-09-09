@@ -13,10 +13,13 @@
         }
         .auto-style4 {
             width: 277px;
+            height: 25px;
         }
     .auto-style5 {
-        width: 61px;
-    }
+        width: 80px;
+            height: 40px;
+            margin-top: 5px;
+        }
     .auto-style6 {
         width: 277px;
         text-align: center;
@@ -42,6 +45,13 @@
         text-align: center;
         font-size: large;
     }
+        .auto-style12 {
+            width: 290px;
+            height: 25px;
+        }
+        .auto-style13 {
+            height: 25px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -125,20 +135,20 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style12"></td>
+            <td class="auto-style4"></td>
+            <td class="auto-style13"></td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style6">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" Height="40px" Width="80px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="Reset1" class="auto-style5" type="reset" value="reset" /></td>
             <td>&nbsp;</td>
         </tr>
     </table>
-    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Back" />
+    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Back" CausesValidation="False" Height="40px" Width="80px" />
     <br />
     <br />
     <br />

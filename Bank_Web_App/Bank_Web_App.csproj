@@ -72,6 +72,7 @@
     <Content Include="App_Data\DB_Bank_Web_App_log.ldf">
       <DependentUpon>DB_Bank_Web_App.mdf</DependentUpon>
     </Content>
+    <Content Include="Bank_Balance.aspx" />
     <Content Include="Customer_Login.aspx" />
     <Content Include="Employee_Login.aspx" />
     <Content Include="Employee_Main_Page.aspx" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="All_Customer_List.aspx.designer.cs">
       <DependentUpon>All_Customer_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_Balance.aspx.cs">
+      <DependentUpon>Bank_Balance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bank_Balance.aspx.designer.cs">
+      <DependentUpon>Bank_Balance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer_Login.aspx.cs">
       <DependentUpon>Customer_Login.aspx</DependentUpon>

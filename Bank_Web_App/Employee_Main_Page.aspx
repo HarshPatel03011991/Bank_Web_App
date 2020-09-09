@@ -42,6 +42,12 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td class="auto-style3">
+                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
