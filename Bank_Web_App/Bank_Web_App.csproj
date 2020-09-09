@@ -67,13 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="All_Customer_List.aspx" />
+    <Content Include="App_Data\DB_Bank_Web_App.mdf" />
+    <Content Include="App_Data\DB_Bank_Web_App_log.ldf">
+      <DependentUpon>DB_Bank_Web_App.mdf</DependentUpon>
+    </Content>
     <Content Include="Customer_Login.aspx" />
     <Content Include="Employee_Login.aspx" />
+    <Content Include="Employee_Main_Page.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="MyStyleSheet.css" />
+    <Content Include="New_Customer_Registration.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All_Customer_List.aspx.cs">
+      <DependentUpon>All_Customer_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All_Customer_List.aspx.designer.cs">
+      <DependentUpon>All_Customer_List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customer_Login.aspx.cs">
       <DependentUpon>Customer_Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +102,13 @@
     <Compile Include="Employee_Login.aspx.designer.cs">
       <DependentUpon>Employee_Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employee_Main_Page.aspx.cs">
+      <DependentUpon>Employee_Main_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Main_Page.aspx.designer.cs">
+      <DependentUpon>Employee_Main_Page.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,6 +122,13 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="New_Customer_Registration.aspx.cs">
+      <DependentUpon>New_Customer_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New_Customer_Registration.aspx.designer.cs">
+      <DependentUpon>New_Customer_Registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
