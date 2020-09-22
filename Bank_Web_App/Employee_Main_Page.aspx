@@ -19,7 +19,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         <asp:Label ID="Label_welcome" runat="server" Text="Welcome  "></asp:Label>
-        &nbsp;&nbsp; </p>
+        &nbsp;&nbsp;</p>
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">
