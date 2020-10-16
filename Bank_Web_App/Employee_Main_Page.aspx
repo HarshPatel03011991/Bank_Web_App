@@ -43,7 +43,7 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" />
+                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" OnClick="Button4_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>

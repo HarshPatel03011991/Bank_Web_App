@@ -37,5 +37,10 @@ namespace Bank_Web_App
         {
             Response.Redirect("All_Customer_List.aspx");
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Bank_Balance.aspx");
+        }
     }
 }
