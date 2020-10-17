@@ -11,6 +11,7 @@ namespace Bank_Web_App
 {
     public partial class Bank_Balance : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,21 +31,22 @@ namespace Bank_Web_App
                  conn.Open();
                  string checkPasswordQuery = "select UserName from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
                  SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
-                 string User_NN = passComm.ExecuteScalar().ToString().Replace(" ", "");
-             //    if (password == TextBoxPassword.Text)
-                 {
-                     Session["New"] = User_NN;
-                     Response.Write("Password is correct");
-                     Response.Redirect("Bank_Balance_Modify.aspx");
-                 }
-              /*   else
-                 {
-                     Response.Write("Password is not correct");
-                 }
-                   */
-                 conn.Close();
+                 string User_Name_Temp = passComm.ExecuteScalar().ToString().Replace(" ", "");
                 
-                Response.Write("Contact No is correct");
+
+                string checkPasswordQuery_1 = "select Balance from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
+                SqlCommand passComm_1 = new SqlCommand(checkPasswordQuery_1, conn);
+                string Balance_Temp = passComm_1.ExecuteScalar().ToString().Replace(" ", "");
+
+
+
+              
+                    Session["New"] = User_Name_Temp;
+                    Session["New_1"] = Balance_Temp;
+                    Session["New_2"] = TextBox1.Text;
+                    Response.Redirect("Bank_Balance_Modify.aspx");
+                    conn.Close();
+                    Response.Write("Contact No is correct");
             }
             else
             {
