@@ -28,25 +28,28 @@ namespace Bank_Web_App
             conn.Close();
             if (temp == 1)
             {
-                 conn.Open();
-                 string checkPasswordQuery = "select UserName from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
-                 SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
-                 string User_Name_Temp = passComm.ExecuteScalar().ToString().Replace(" ", "");
-                
-
-                string checkPasswordQuery_1 = "select Balance from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
-                SqlCommand passComm_1 = new SqlCommand(checkPasswordQuery_1, conn);
-                string Balance_Temp = passComm_1.ExecuteScalar().ToString().Replace(" ", "");
+                /*     conn.Open();
+                     string checkPasswordQuery = "select UserName from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
+                     SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
+                     string User_Name_Temp = passComm.ExecuteScalar().ToString().Replace(" ", "");
 
 
+                    string checkPasswordQuery_1 = "select Balance from CustomerDetails where MobileNo = '" + TextBox1.Text + "'";
+                    SqlCommand passComm_1 = new SqlCommand(checkPasswordQuery_1, conn);
+                    string Balance_Temp = passComm_1.ExecuteScalar().ToString().Replace(" ", "");
 
-              
-                    Session["New"] = User_Name_Temp;
-                    Session["New_1"] = Balance_Temp;
-                    Session["New_2"] = TextBox1.Text;
-                    Response.Redirect("Bank_Balance_Modify.aspx");
-                    conn.Close();
-                    Response.Write("Contact No is correct");
+
+
+
+                        Session["New"] = User_Name_Temp;
+                        Session["New_1"] = Balance_Temp;
+                        Session["New_2"] = TextBox1.Text;
+                        Response.Redirect("Bank_Balance_Modify.aspx");
+                        conn.Close();
+                */
+                Session["New_2"] = TextBox1.Text;
+                Response.Write("Contact No is correct");
+                Response.Redirect("Bank_Balance_Modify.aspx");
             }
             else
             {

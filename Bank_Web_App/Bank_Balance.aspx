@@ -73,7 +73,7 @@
             <td class="auto-style5">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Width="67px" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Width="67px" CausesValidation="False" />
             </td>
             <td>&nbsp;</td>
         </tr>

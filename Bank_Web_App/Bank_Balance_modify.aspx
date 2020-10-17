@@ -37,6 +37,18 @@
             width: 82px;
             height: 26px;
         }
+        .auto-style13 {
+            width: 135px;
+            height: 19px;
+        }
+        .auto-style14 {
+            width: 63px;
+            height: 19px;
+        }
+        .auto-style15 {
+            width: 82px;
+            height: 19px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -46,28 +58,41 @@
     <br />
     <table class="auto-style2">
         <tr>
-            <td class="auto-style4">Contact_No</td>
-            <td class="auto-style9">
-             &nbsp;<asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" Width="150px"></asp:TextBox>
-            
-            </td>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style13">&nbsp;</td>
+            <td class="auto-style14">
+             &nbsp;</td>
+            <td class="auto-style15"></td>
+            <td class="auto-style15"></td>
         </tr>
         <tr>
-            <td class="auto-style4">Bank Balance</td>
-            <td class="auto-style9">
+            <td class="auto-style5">Contact_No</td>
+            <td class="auto-style8">
+                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" Width="150px"></asp:TextBox>
+            
+            </td>
+            <td class="auto-style6">&nbsp;</td>
+            <td class="auto-style6">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style5">Bank Balance</td>
+            <td class="auto-style8">
              <asp:TextBox ID="TextBox_Catch_balance" runat="server" Width="150px"></asp:TextBox>
             
             </td>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style6"></td>
         </tr>
         <tr>
             <td class="auto-style10"></td>
             <td class="auto-style11"></td>
             <td class="auto-style12"></td>
             <td class="auto-style12"></td>
+        </tr>
+        <tr>
+            <td class="auto-style10">&nbsp;</td>
+            <td class="auto-style11">&nbsp;</td>
+            <td class="auto-style12">&nbsp;</td>
+            <td class="auto-style12">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style5">Add Money</td>
@@ -86,7 +111,7 @@
                 <asp:TextBox ID="TextBox_Remove" runat="server" Width="150px"></asp:TextBox>
             </td>
             <td class="auto-style3">
-                <asp:Button ID="Button_Enter_Remove" runat="server" Text="Enter" Width="70px" />
+                <asp:Button ID="Button_Enter_Remove" runat="server" Text="Enter" Width="70px" OnClick="Button_Enter_Remove_Click" />
             </td>
             <td class="auto-style3">
                 &nbsp;</td>
@@ -100,7 +125,7 @@
         <tr>
             <td class="auto-style4">&nbsp;</td>
             <td class="auto-style9">
-                <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Back" Width="70px" />
+                <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Back" Width="70px" CausesValidation="False" />
             </td>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style3">&nbsp;</td>

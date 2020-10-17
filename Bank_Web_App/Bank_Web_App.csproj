@@ -75,6 +75,7 @@
     <Content Include="Bank_Balance.aspx" />
     <Content Include="Bank_Balance_modify.aspx" />
     <Content Include="Customer_Login.aspx" />
+    <Content Include="Customer_Main_Page.aspx" />
     <Content Include="Employee_Login.aspx" />
     <Content Include="Employee_Main_Page.aspx" />
     <Content Include="Home.aspx" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="Customer_Login.aspx.designer.cs">
       <DependentUpon>Customer_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Main_Page.aspx.cs">
+      <DependentUpon>Customer_Main_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Main_Page.aspx.designer.cs">
+      <DependentUpon>Customer_Main_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employee_Login.aspx.cs">
       <DependentUpon>Employee_Login.aspx</DependentUpon>

@@ -55,7 +55,7 @@
         <td class="auto-style14">&nbsp;</td>
         <td class="auto-style3">Employee Login Details </td>
         <td class="auto-style10">
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" CausesValidation="False" />
         </td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@
     <tr>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style13">
-            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="78px" />
+            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="78px" style="height: 40px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" />
         </td>
