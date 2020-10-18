@@ -37,5 +37,10 @@ namespace Bank_Web_App
             Response.Redirect("Home.aspx");
 
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Demand_Draft_Details.aspx");
+        }
     }
 }

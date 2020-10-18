@@ -10,8 +10,13 @@
     <p>
         &nbsp;</p>
     <p>
-                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" OnClick="Button4_Click" />
+                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance" Width="200px" OnClick="Button4_Click" />
             </p>
+    <p>
+                <asp:Button ID="Button5" runat="server" Height="60px" OnClick="Button5_Click" Text="Demand Draft" Width="200px" />
+            </p>
+    <p>
+                &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
