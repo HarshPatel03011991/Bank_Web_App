@@ -48,6 +48,7 @@ namespace Bank_Web_App
                         conn.Close();
                 */
                 Session["New_2"] = TextBox1.Text;
+                Session["New_3"] = 0.ToString();
                 Response.Write("Contact No is correct");
                 Response.Redirect("Bank_Balance_Modify.aspx");
             }

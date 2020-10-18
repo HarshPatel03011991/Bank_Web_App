@@ -26,19 +26,25 @@ namespace Bank_Web_App
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
 
             conn.Open();
-            string checkuser = "select count (*) from CustomerDetails where UserName = '" + TextBoxUserName.Text + "'";
+            string checkuser = "select count (*) from CustomerDetails where MobileNo = '" + TextBoxUsername.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             conn.Close();
             if (temp == 1)
             {
                 conn.Open();
-                string checkPasswordQuery = "select Password from CustomerDetails where UserName = '" + TextBoxUserName.Text + "'";
+                string checkPasswordQuery = "select Password from CustomerDetails where MobileNo = '" + TextBoxUsername.Text + "'";
                 SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
                 string password = passComm.ExecuteScalar().ToString().Replace(" ", "");
                 if (password == TextBoxPassword.Text)
                 {
-                    Session["New"] = TextBoxUserName.Text;
+                    Session["New"] = TextBoxUsername.Text;
+                    string checkPasswordQuery_1 = "select UserName from CustomerDetails where MobileNo = '" + TextBoxUsername.Text + "'";
+                    SqlCommand passComm_1 = new SqlCommand(checkPasswordQuery_1, conn);
+                    string User_Name_Temp = passComm_1.ExecuteScalar().ToString().Replace(" ", "");
+
+
+                    Session["New_1"] = User_Name_Temp;
                     Response.Write("Password is correct");
                     Response.Redirect("Customer_Main_Page.aspx");
                 }
@@ -58,7 +64,7 @@ namespace Bank_Web_App
 
         protected void Reset_Click(object sender, EventArgs e)
         {
-            TextBoxUserName.Text = "";
+            TextBoxUsername.Text = "";
             TextBoxPassword.Text = "";
         }
     }

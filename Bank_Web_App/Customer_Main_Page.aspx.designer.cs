@@ -24,6 +24,15 @@ namespace Bank_Web_App
         protected global::System.Web.UI.WebControls.Label Label_welcome;
 
         /// <summary>
+        /// Lable_Contct_No control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lable_Contct_No;
+
+        /// <summary>
         /// Button4 control.
         /// </summary>
         /// <remarks>

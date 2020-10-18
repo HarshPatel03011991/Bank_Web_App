@@ -24,13 +24,13 @@ namespace Bank_Web_App
         protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// TextBoxUserName control.
+        /// TextBoxUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxUsername;
 
         /// <summary>
         /// RequiredFieldValidator3 control.
@@ -40,6 +40,15 @@ namespace Bank_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+
+        /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
         /// TextBoxPassword control.

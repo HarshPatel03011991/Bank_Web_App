@@ -5,10 +5,10 @@
         width: 100%;
     }
     .auto-style2 {
-        width: 346px;
+        width: 347px;
     }
     .auto-style3 {
-        width: 346px;
+        width: 347px;
         text-align: center;
         height: 44px;
             font-size: x-large;
@@ -17,7 +17,7 @@
         width: 300px;
     }
     .auto-style7 {
-            width: 346px;
+            width: 347px;
             height: 26px;
             text-align: center;
         }
@@ -38,7 +38,7 @@
         font-size: large;
     }
     .auto-style13 {
-        width: 346px;
+        width: 347px;
         text-align: left;
     }
     .auto-style14 {
@@ -84,9 +84,9 @@
     <tr>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style13">
-            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="78px" style="height: 40px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" />
+            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" style="height: 40px" Height="40px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Height="40px" Width="80px" />
         </td>
         <td>&nbsp;</td>
     </tr>
