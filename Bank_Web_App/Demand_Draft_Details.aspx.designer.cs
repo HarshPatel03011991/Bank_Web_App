@@ -24,6 +24,15 @@ namespace Bank_Web_App
         protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
+        /// TextBox_Catch_Mobile_No control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Catch_Mobile_No;
+
+        /// <summary>
         /// TextBox_In_Favour_of control.
         /// </summary>
         /// <remarks>

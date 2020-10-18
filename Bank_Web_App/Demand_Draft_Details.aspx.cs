@@ -11,7 +11,7 @@ namespace Bank_Web_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TextBox_Catch_Mobile_No.Text = Session["New_2"].ToString();
         }
 
         protected void Button3_Click(object sender, EventArgs e)
@@ -25,6 +25,11 @@ namespace Bank_Web_App
             TextBox_Payable_At.Text = "";
             TextBox_Amout_Number.Text = "";
             TextBox_Amount_In_Words.Text = "";
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

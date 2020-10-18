@@ -32,8 +32,10 @@
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td class="auto-style5">&nbsp;</td>
+            <td>Contact No</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -79,7 +81,7 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td class="auto-style5">&nbsp;<asp:Button ID="Button1" runat="server" Text="Create" />
+            <td class="auto-style5">&nbsp;<asp:Button ID="Button1" runat="server" Text="Create" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" />
             </td>

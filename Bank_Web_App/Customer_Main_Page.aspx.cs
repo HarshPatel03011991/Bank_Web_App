@@ -40,6 +40,9 @@ namespace Bank_Web_App
 
         protected void Button5_Click(object sender, EventArgs e)
         {
+
+            Session["New_2"] = Session["New"].ToString();
+            Session["New_3"] = 1.ToString();
             Response.Redirect("Demand_Draft_Details.aspx");
         }
     }
