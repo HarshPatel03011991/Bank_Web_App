@@ -42,5 +42,14 @@ namespace Bank_Web_App
         {
             Response.Redirect("Bank_Balance.aspx");
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            
+            Session["New_2"] = Session["New"].ToString();
+            Session["New_5"] = Session["New_4"].ToString();
+
+            Response.Redirect("Demand_Draft_Details.aspx");
+        }
     }
 }

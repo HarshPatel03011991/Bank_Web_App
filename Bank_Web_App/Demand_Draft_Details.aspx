@@ -17,6 +17,13 @@
             text-align: center;
             font-size: large;
         }
+        .auto-style7 {
+            height: 29px;
+        }
+        .auto-style8 {
+            text-align: center;
+            height: 29px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -34,7 +41,7 @@
         <tr>
             <td>Contact No</td>
             <td class="auto-style5">
-                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" BackColor="#CCCCFF" BorderColor="White"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -76,7 +83,9 @@
         </tr>
         <tr>
             <td class="auto-style2"></td>
-            <td class="auto-style2"></td>
+            <td class="auto-style2">
+                <asp:TextBox ID="TextBox_Catch_Balance" runat="server" BackColor="#CCCCFF" ReadOnly="True" Visible="False"></asp:TextBox>
+            </td>
             <td class="auto-style2"></td>
         </tr>
         <tr>

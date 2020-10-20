@@ -42,7 +42,6 @@ namespace Bank_Web_App
         {
 
             Session["New_2"] = Session["New"].ToString();
-            Session["New_3"] = 1.ToString();
             Response.Redirect("Demand_Draft_Details.aspx");
         }
     }

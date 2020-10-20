@@ -52,6 +52,10 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td class="auto-style3">
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" />
             </td>

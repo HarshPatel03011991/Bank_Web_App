@@ -82,15 +82,25 @@ namespace Bank_Web_App
 
         protected void Button_Enter_Remove_Click(object sender, EventArgs e)
         {
-            TextBox_Catch_balance.Text = (Convert.ToInt32(TextBox_Catch_balance.Text) - Convert.ToInt32(TextBox_Remove.Text)).ToString();
+            int check_Negative_Balance;
+            check_Negative_Balance = (Convert.ToInt32(TextBox_Catch_balance.Text) - Convert.ToInt32(TextBox_Remove.Text));
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
-            conn.Open();
-            string update = "update CustomerDetails set Balance='" + this.TextBox_Catch_balance.Text + "' where MobileNo='" + this.TextBox_Catch_Mobile_No.Text + "';";
-            SqlCommand com = new SqlCommand(update, conn);
-            com.ExecuteNonQuery();
-            Response.Write("Balance Subtraction is successfull");
-            conn.Close();
+            if (check_Negative_Balance < 0)
+            {
+                Response.Write("insufficient Balance");
+            }
+            else
+            {
+                TextBox_Catch_balance.Text = (Convert.ToInt32(TextBox_Catch_balance.Text) - Convert.ToInt32(TextBox_Remove.Text)).ToString();
+
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
+                conn.Open();
+                string update = "update CustomerDetails set Balance='" + this.TextBox_Catch_balance.Text + "' where MobileNo='" + this.TextBox_Catch_Mobile_No.Text + "';";
+                SqlCommand com = new SqlCommand(update, conn);
+                com.ExecuteNonQuery();
+                Response.Write("Balance Subtraction is successfull");
+                conn.Close();
+            }
         }
     }
 }

@@ -43,7 +43,6 @@ namespace Bank_Web_App
                     SqlCommand passComm_1 = new SqlCommand(checkPasswordQuery_1, conn);
                     string User_Name_Temp = passComm_1.ExecuteScalar().ToString().Replace(" ", "");
 
-
                     Session["New_1"] = User_Name_Temp;
                     Response.Write("Password is correct");
                     Response.Redirect("Customer_Main_Page.aspx");
