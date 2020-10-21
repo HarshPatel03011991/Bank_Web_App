@@ -10,17 +10,17 @@
     <p>
         &nbsp;</p>
     <p>
-                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance" Width="200px" OnClick="Button4_Click" />
+                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance" Width="200px" OnClick="Button4_Click" Font-Bold="True" />
             </p>
     <p>
-                <asp:Button ID="Button5" runat="server" Height="60px" OnClick="Button5_Click" Text="Demand Draft" Width="200px" />
+                <asp:Button ID="Button5" runat="server" Height="60px" OnClick="Button5_Click" Text="Demand Draft" Width="200px" Font-Bold="True" />
             </p>
     <p>
                 &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" Height="40px" Width="80px" Font-Bold="True" />
             </p>
     <p>
         &nbsp;</p>

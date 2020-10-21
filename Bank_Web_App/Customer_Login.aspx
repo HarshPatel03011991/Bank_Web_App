@@ -51,7 +51,7 @@
                 <td class="auto-style8"></td>
                 <td class="auto-style14"><span class="auto-style12"><strong>Customer Login Details</strong></span> </td>
                 <td class="auto-style15">
-    <asp:Button ID="Button2" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" CausesValidation="False" />
+    <asp:Button ID="Button2" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" CausesValidation="False" Font-Bold="True" Height="40px" Width="80px" />
                 </td>
                 <td class="auto-style8"></td>
             </tr>
@@ -63,7 +63,7 @@
         <td class="auto-style8">
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxUserName" ErrorMessage="Contact must be required" Font-Names="Times New Roman" Font-Size="Large" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUserName" ErrorMessage="Mobile Number must be need" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUserName" ErrorMessage="Mobile Number must be need" Font-Names="Times New Roman" Font-Size="Large" ForeColor="Red"></asp:RequiredFieldValidator>
         </td>
             </tr>
             <tr>
@@ -83,9 +83,9 @@
             <tr>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style13">
-            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" CausesValidation="False" />
+            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" CausesValidation="False" Font-Bold="True" Height="40px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Width="80px" />
+            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Width="80px" Font-Bold="True" Height="40px" />
         </td>
         <td>&nbsp;</td>
             </tr>

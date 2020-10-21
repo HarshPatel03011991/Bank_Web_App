@@ -35,7 +35,7 @@
             <td>&nbsp;</td>
             <td class="auto-style6"><strong>Demand Draft</strong></td>
             <td class="auto-style3">
-                <asp:Button ID="Button3" runat="server" CausesValidation="False" OnClick="Button3_Click" Text="Back" />
+                <asp:Button ID="Button3" runat="server" CausesValidation="False" OnClick="Button3_Click" Text="Back" Font-Bold="True" Height="40px" Width="80px" />
             </td>
         </tr>
         <tr>
@@ -90,9 +90,9 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td class="auto-style5">&nbsp;<asp:Button ID="Button1" runat="server" Text="Create" OnClick="Button1_Click" />
+            <td class="auto-style5">&nbsp;<asp:Button ID="Button1" runat="server" Text="Create" OnClick="Button1_Click" Font-Bold="True" Height="40px" Width="80px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" Font-Bold="True" Height="40px" Width="80px" />
             </td>
             <td>&nbsp;</td>
         </tr>

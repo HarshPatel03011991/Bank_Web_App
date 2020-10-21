@@ -54,6 +54,20 @@
         .auto-style13 {
             height: 25px;
         }
+        .auto-style14 {
+            text-align: right;
+        height: 42px;
+    }
+    .auto-style15 {
+        text-align: right;
+        width: 290px;
+        height: 42px;
+    }
+    .auto-style16 {
+        width: 277px;
+        text-align: center;
+        height: 42px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -66,11 +80,12 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style6">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
+            <td class="auto-style15"></td>
+            <td class="auto-style16">
+                </td>
+            <td class="auto-style14">
+    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Back" CausesValidation="False" Height="40px" Width="80px" Font-Bold="True" />
+            </td>
         </tr>
         <tr>
             <td class="auto-style2">User Name</td>
@@ -157,13 +172,12 @@
         <tr>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style6">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" Height="40px" Width="80px" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" Height="40px" Width="80px" Font-Bold="True" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="Reset1" class="auto-style5" type="reset" value="reset" /></td>
             <td>&nbsp;</td>
         </tr>
     </table>
-    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Back" CausesValidation="False" Height="40px" Width="80px" />
     <br />
     <br />
     <br />

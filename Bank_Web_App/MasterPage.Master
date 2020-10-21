@@ -16,7 +16,7 @@
         
          <div class="header">
               <h1>Welcome</h1>
-              <p>Bank Web Application</p>
+              <p><strong>Bank Web Application</strong></p>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

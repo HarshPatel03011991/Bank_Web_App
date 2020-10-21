@@ -69,7 +69,7 @@ namespace Bank_Web_App
                 {
                     int check_Negative_Balance;
                     check_Negative_Balance = (Convert.ToInt32(TextBox_Catch_Balance.Text) - Convert.ToInt32(TextBox_Amout_Number.Text));
-
+                    Response.Write(" ");
                     if (check_Negative_Balance < 0)
                     {
                         Response.Write("insufficient Balance");
@@ -84,29 +84,36 @@ namespace Bank_Web_App
                         string update = "update CustomerDetails set Balance='" + this.TextBox_Catch_Balance.Text + "' where MobileNo='" + this.TextBox_Catch_Mobile_No.Text + "';";
                         SqlCommand com = new SqlCommand(update, conn);
                         com.ExecuteNonQuery();
-                        Response.Write("Balance Subtraction is successfull");
                         conn.Close();
 
                       
 
                         StringBuilder sb = new StringBuilder();
 
-
                         //Generate Invoice (Bill) Header.
 
-                        sb.Append("<table width='100%' frame='void'  border-collapse= 'collapse' >");
-                        //    sb.Append("<table>");
-                        sb.Append("<tr><td align='center' style='background-color: #18B5F0' colspan = '2'><b>Order Sheet</b></td></tr>");
+                        //  sb.Append("<table width='100%' frame='void'  border-collapse= 'collapse' >");
+                        //  sb.Append("<table style border: '2'>");
+
+                        //      sb.Append("<table width='100%'; border='.5' border-style=groove'>");
+
+                     
+                        sb.Append("<table border ='0'>");
+                      
+
+                         //sb.Append("<table width='100%' border - collapse: 'collapse' border:' 2px solid #000000'>");
+                        sb.Append("<tr><td align='center' style='background-color: #D20B0C' colspan = '2'><h1><b>Demand Draft</b></h1></td></tr>");
                         sb.Append("<tr><td colspan = '2'></td></tr>");
+                       
                         sb.Append("<tr><td><b>Canada Trust </b>");
                         //    sb.Append(orderNo);
                         sb.Append("</td><td align = 'right'><b>Date: </b>");
                         sb.Append(DateTime.Now);
-                        sb.Append(" </td></tr>");
+                        sb.Append("</td></tr>");
+
                         sb.Append("<tr><td align = 'right' colspan = '2'><b>Unique No : </b>");
                         sb.Append(companyName);
                         sb.Append("</td></tr>");
-
 
                         sb.Append("<tr><td colspan = '2'><b>Favour of : </b>");
                         sb.Append(TextBox_In_Favour_of.Text);
@@ -115,21 +122,22 @@ namespace Bank_Web_App
                         sb.Append("<tr>");
                         sb.Append("<td colspan = '2'><b>Payable At : </b>");
                         sb.Append(TextBox_Payable_At.Text);
-                        sb.Append("</td>");
+                        sb.Append("</td></tr>");
 
                         sb.Append("<tr>");
                         sb.Append("<td align = 'right' colspan = '2'><b>Amount : </b>");
                         sb.Append(TextBox_Amout_Number.Text);
                         sb.Append("</td></tr>");
-
-
+                     
 
                         sb.Append("<tr><td colspan = '2'><b>Amount in Words : </b>");
                         sb.Append(TextBox_Amount_In_Words.Text);
                         sb.Append("</td></tr>");
+                       
 
                         sb.Append("</table>");
-                        sb.Append("<br />");
+                      
+                        // sb.Append("<br />");
 
                         //Generate Invoice (Bill) Items Grid.
                         /*       sb.Append("<table border = '0'>");
@@ -162,6 +170,7 @@ namespace Bank_Web_App
                                sb.Append("</tr></table>");
                         */
                         //Export HTML String as PDF.
+
                         StringReader sr = new StringReader(sb.ToString());
                         Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
                         HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
@@ -172,7 +181,7 @@ namespace Bank_Web_App
                         Response.ContentType = "application/pdf";
                         Response.AddHeader("content-disposition", "attachment;filename=Invoice_" + orderNo + ".pdf");
                         Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                        Response.Write(pdfDoc);
+                      
                         Response.End();
                       
                     }

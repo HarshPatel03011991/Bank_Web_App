@@ -29,7 +29,7 @@
         <SortedDescendingHeaderStyle BackColor="#000065" />
     </asp:GridView>
     <p>
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Height="33px" Width="70px" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Height="40px" Width="80px" Font-Bold="True" />
     </p>
     <p>
     </p>

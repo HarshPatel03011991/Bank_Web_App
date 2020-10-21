@@ -36,6 +36,14 @@ namespace Bank_Web_App
                 
                 Response.Write("your registration is successfull");
                 conn.Close();
+
+
+
+                 TextBoxUN.Text = "";
+                 TextBoxEmail.Text = "";
+                 TextBoxPass.Text = "";
+                 TextBoxBalance.Text = "";
+                 TextBoxMobile.Text = "";
             }
             catch (Exception ex)
             {

@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="All_Customer_List.aspx" />
     <Content Include="App_Data\DB_Bank_Web_App.mdf" />
     <Content Include="App_Data\DB_Bank_Web_App_log.ldf">
@@ -83,11 +84,19 @@
     <Content Include="Employee_Login.aspx" />
     <Content Include="Employee_Main_Page.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\Block_Diagramme.JPG" />
     <Content Include="MyStyleSheet.css" />
     <Content Include="New_Customer_Registration.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="All_Customer_List.aspx.cs">
       <DependentUpon>All_Customer_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

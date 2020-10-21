@@ -23,7 +23,7 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="Button2" runat="server" Height="60px" OnClick="Button2_Click" Text="New Customer Registration" Width="260px" />
+                <asp:Button ID="Button2" runat="server" Height="60px" OnClick="Button2_Click" Text="New Customer Registration" Width="260px" Font-Bold="True" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -33,7 +33,7 @@
         </tr>
         <tr>
             <td class="auto-style4">
-                <asp:Button ID="Button3" runat="server" Height="60px" OnClick="Button3_Click" Text="All Customer Details" Width="260px" />
+                <asp:Button ID="Button3" runat="server" Height="60px" OnClick="Button3_Click" Text="All Customer Details" Width="260px" Font-Bold="True" />
             </td>
             <td class="auto-style2"></td>
         </tr>
@@ -43,7 +43,7 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" OnClick="Button4_Click" />
+                <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" OnClick="Button4_Click" Font-Bold="True" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -57,7 +57,7 @@
         </tr>
         <tr>
             <td class="auto-style3">
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" Font-Bold="True" Height="40px" Width="80px" />
             </td>
             <td>&nbsp;</td>
         </tr>

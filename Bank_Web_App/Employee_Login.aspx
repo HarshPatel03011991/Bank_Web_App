@@ -53,9 +53,9 @@
 <table class="auto-style1">
     <tr>
         <td class="auto-style14">&nbsp;</td>
-        <td class="auto-style3">Employee Login Details </td>
+        <td class="auto-style3"><strong>Employee Login Details </strong> </td>
         <td class="auto-style10">
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" CausesValidation="False" />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="HOME" CssClass="auto-style12" CausesValidation="False" Font-Bold="True" Font-Names="Times New Roman" Height="40px" Width="80px" />
         </td>
     </tr>
     <tr>
@@ -84,9 +84,9 @@
     <tr>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style13">
-            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" style="height: 40px" Height="40px" />
+            <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" style="height: 40px" Height="40px" Font-Bold="True" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Height="40px" Width="80px" />
+            <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Height="40px" Width="80px" Font-Bold="True" />
         </td>
         <td>&nbsp;</td>
     </tr>

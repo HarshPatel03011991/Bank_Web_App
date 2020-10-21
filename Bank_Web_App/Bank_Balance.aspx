@@ -71,9 +71,9 @@
         <tr>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style5">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" Font-Bold="True" Height="40px" Width="80px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Width="67px" CausesValidation="False" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" Width="80px" CausesValidation="False" Font-Bold="True" Height="40px" />
             </td>
             <td>&nbsp;</td>
         </tr>

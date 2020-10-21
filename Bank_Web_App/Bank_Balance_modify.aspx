@@ -67,7 +67,7 @@
         <tr>
             <td class="auto-style5">Contact_No</td>
             <td class="auto-style8">
-                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" Width="150px" BackColor="#CCCCFF" ReadOnly="True"></asp:TextBox>
             
             </td>
             <td class="auto-style6">&nbsp;</td>
@@ -76,7 +76,7 @@
         <tr>
             <td class="auto-style5">Bank Balance</td>
             <td class="auto-style8">
-             <asp:TextBox ID="TextBox_Catch_balance" runat="server" Width="150px"></asp:TextBox>
+             <asp:TextBox ID="TextBox_Catch_balance" runat="server" Width="150px" BackColor="#CCCCFF" ReadOnly="True"></asp:TextBox>
             
             </td>
             <td class="auto-style6"></td>
@@ -100,7 +100,7 @@
                 <asp:TextBox ID="TextBox_Add" runat="server" Width="150px"></asp:TextBox>
             </td>
             <td class="auto-style6">
-                <asp:Button ID="Button_Enter_Add" runat="server" Text="Enter" Width="70px" OnClick="Button_Enter_Add_Click" />
+                <asp:Button ID="Button_Enter_Add" runat="server" Text="Enter" Width="80px" OnClick="Button_Enter_Add_Click" Font-Bold="True" Height="40px" />
             </td>
             <td class="auto-style6">
                 &nbsp;</td>
@@ -111,7 +111,7 @@
                 <asp:TextBox ID="TextBox_Remove" runat="server" Width="150px"></asp:TextBox>
             </td>
             <td class="auto-style3">
-                <asp:Button ID="Button_Enter_Remove" runat="server" Text="Enter" Width="70px" OnClick="Button_Enter_Remove_Click" />
+                <asp:Button ID="Button_Enter_Remove" runat="server" Text="Enter" Width="80px" OnClick="Button_Enter_Remove_Click" Font-Bold="True" Height="40px" />
             </td>
             <td class="auto-style3">
                 &nbsp;</td>
@@ -125,7 +125,7 @@
         <tr>
             <td class="auto-style4">&nbsp;</td>
             <td class="auto-style9">
-                <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Back" Width="70px" CausesValidation="False" />
+                <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Back" Width="80px" CausesValidation="False" Font-Bold="True" Height="40px" />
             </td>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style3">&nbsp;</td>
