@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using Org.BouncyCastle.Asn1.Cms;
 
 namespace Bank_Web_App
 {
@@ -72,12 +73,32 @@ namespace Bank_Web_App
             TextBox_Catch_balance.Text = (Convert.ToInt32(TextBox_Catch_balance.Text) + Convert.ToInt32(TextBox_Add.Text)).ToString();
            
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
+         
             conn.Open();
             string update = "update CustomerDetails set Balance='" + this.TextBox_Catch_balance.Text + "' where MobileNo='" + this.TextBox_Catch_Mobile_No.Text + "';";
             SqlCommand com = new SqlCommand(update, conn);
             com.ExecuteNonQuery();
             Response.Write("Balance addition is successfull");
             conn.Close();
+
+
+            Guid newGuID = Guid.NewGuid();
+            SqlConnection conn_1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
+            conn_1.Open();
+            string insert = " insert into All_Trans (id,Balance_Acc,Mobile_No_Add,Add_Remove,Amount,Date_TIme) values (@id,@balance,@mobileno,@Add_Remove_Amount,@amount,@date_time)";
+            SqlCommand com_1 = new SqlCommand(insert, conn_1);
+            com_1.Parameters.AddWithValue("@id", newGuID.ToString());
+            com_1.Parameters.AddWithValue("@balance", TextBox_Catch_balance.Text);
+            com_1.Parameters.AddWithValue("@mobileno", TextBox_Catch_Mobile_No.Text);
+            com_1.Parameters.AddWithValue("@Add_Remove_Amount", "Credit");
+            com_1.Parameters.AddWithValue("@amount", TextBox_Add.Text);
+            com_1.Parameters.AddWithValue("@date_time", DateTime.Now);
+
+            com_1.ExecuteNonQuery();
+
+            conn_1.Close();
+
+
         }
 
         protected void Button_Enter_Remove_Click(object sender, EventArgs e)
@@ -100,6 +121,27 @@ namespace Bank_Web_App
                 com.ExecuteNonQuery();
                 Response.Write("Balance Subtraction is successfull");
                 conn.Close();
+
+
+
+
+                Guid newGuID = Guid.NewGuid();
+                SqlConnection conn_1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sevak\source\repos\Bank_Web_App\Bank_Web_App\App_Data\DB_Bank_Web_App.mdf;Integrated Security=True");
+                conn_1.Open();
+                string insert = " insert into All_Trans (id,Balance_Acc,Mobile_No_Add,Add_Remove,Amount,Date_TIme) values (@id,@balance,@mobileno,@Add_Remove_Amount,@amount,@date_time)";
+                SqlCommand com_1 = new SqlCommand(insert, conn_1);
+                com_1.Parameters.AddWithValue("@id", newGuID.ToString());
+                com_1.Parameters.AddWithValue("@balance", TextBox_Catch_balance.Text);
+                com_1.Parameters.AddWithValue("@mobileno", TextBox_Catch_Mobile_No.Text);
+                com_1.Parameters.AddWithValue("@Add_Remove_Amount", "Debit");
+                com_1.Parameters.AddWithValue("@amount", TextBox_Remove.Text);
+                com_1.Parameters.AddWithValue("@date_time", DateTime.Now);
+
+                com_1.ExecuteNonQuery();
+
+                conn_1.Close();
+
+
             }
         }
     }

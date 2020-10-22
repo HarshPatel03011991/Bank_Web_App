@@ -8,15 +8,25 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 627px;
+            text-align: left;
+        }
+        .auto-style2 {
+            width: 649px;
+            text-align: left;
+        }
+    </style>
 </head>
 
     <body style="background-color:lavender;">
        
     <form id="form1" runat="server">
         
-         <div class="header">
-              <h1>Welcome</h1>
-              <p><strong>Bank Web Application</strong></p>
+         <div class="header" style="background-image: url('/Images/Back_Ground_Image.JPG')">
+              <h1 class="auto-style1">Welcome</h1>
+              <p class="auto-style2"><strong>Bank Web Application</strong></p>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

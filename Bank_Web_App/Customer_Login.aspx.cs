@@ -55,7 +55,7 @@ namespace Bank_Web_App
             }
             else
             {
-                Response.Write("Uer Name is not correct");
+                Response.Write("User Name is not correct");
             }
 
 

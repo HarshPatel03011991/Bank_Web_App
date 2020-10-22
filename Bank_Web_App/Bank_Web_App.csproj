@@ -84,9 +84,13 @@
     <Content Include="Employee_Login.aspx" />
     <Content Include="Employee_Main_Page.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\Back_Ground_Image.JPG" />
+    <Content Include="Images\Back_Notes_Final.png" />
     <Content Include="Images\Block_Diagramme.JPG" />
     <Content Include="MyStyleSheet.css" />
     <Content Include="New_Customer_Registration.aspx" />
+    <Content Include="Search_Tranc.aspx" />
+    <Content Include="Transac.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +179,20 @@
       <DependentUpon>New_Customer_Registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_Tranc.aspx.cs">
+      <DependentUpon>Search_Tranc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_Tranc.aspx.designer.cs">
+      <DependentUpon>Search_Tranc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transac.aspx.cs">
+      <DependentUpon>Transac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transac.aspx.designer.cs">
+      <DependentUpon>Transac.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />

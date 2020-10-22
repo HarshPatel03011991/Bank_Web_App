@@ -18,7 +18,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        <asp:Label ID="Label_welcome" runat="server" Text="Welcome  "></asp:Label>
+        <asp:Label ID="Label_welcome" runat="server" Text="Welcome  " Font-Bold="True" ForeColor="#9900CC"></asp:Label>
         &nbsp;&nbsp;</p>
     <table class="auto-style1">
         <tr>
@@ -44,6 +44,16 @@
         <tr>
             <td class="auto-style3">
                 <asp:Button ID="Button4" runat="server" Height="60px" Text="Check Balance Customer" Width="260px" OnClick="Button4_Click" Font-Bold="True" />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:Button ID="Button5" runat="server" Font-Bold="True" Height="60px" OnClick="Button5_Click1" Text="All Transaction" Width="260px" />
             </td>
             <td>&nbsp;</td>
         </tr>

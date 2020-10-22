@@ -51,5 +51,10 @@ namespace Bank_Web_App
 
             Response.Redirect("Demand_Draft_Details.aspx");
         }
+
+        protected void Button5_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Transac.aspx");
+        }
     }
 }
