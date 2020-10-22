@@ -9,10 +9,10 @@
             width: 290px;
         }
         .auto-style3 {
-            width: 290px;
-        }
+        width: 314px;
+    }
         .auto-style4 {
-            width: 277px;
+            width: 314px;
             height: 25px;
             text-align: center;
         }
@@ -22,61 +22,73 @@
             margin-top: 5px;
         }
     .auto-style6 {
-        width: 277px;
+        width: 314px;
         text-align: center;
     }
     .auto-style7 {
-        text-align: right;
-        width: 290px;
+        width: 314px;
         height: 36px;
     }
     .auto-style8 {
-        width: 277px;
+        width: 314px;
         text-align: center;
         height: 36px;
     }
     .auto-style9 {
         height: 36px;
+        width: 350px;
     }
     .auto-style10 {
         margin-left: 3px;
     }
     .auto-style11 {
-        width: 277px;
+        width: 314px;
         text-align: center;
         font-size: large;
     }
         .auto-style12 {
-            width: 290px;
+            width: 314px;
             height: 25px;
-            text-align: right;
-        }
+            }
         .auto-style13 {
             height: 25px;
-        }
+        width: 350px;
+    }
         .auto-style14 {
             text-align: right;
         height: 42px;
+        width: 350px;
     }
     .auto-style15 {
         text-align: right;
-        width: 290px;
+        width: 314px;
         height: 42px;
     }
     .auto-style16 {
-        width: 277px;
+        width: 314px;
         text-align: center;
         height: 42px;
+    }
+    .auto-style17 {
+        width: 350px;
+    }
+    .auto-style18 {
+        width: 859px;
+        text-align: left;
+    }
+    .auto-style19 {
+        text-align: left;
+        width: 314px;
     }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style1">
+    <table class="auto-style18">
         <tr>
-            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
             <td class="auto-style11">
                 <strong>Enter new customer details</strong></td>
-            <td>
+            <td class="auto-style17">
                 &nbsp;</td>
         </tr>
         <tr>
@@ -88,47 +100,47 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">User Name</td>
+            <td class="auto-style3">User Name</td>
             <td class="auto-style6">
                 <asp:TextBox ID="TextBoxUN" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style17">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUN" ErrorMessage="User Name must be required" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">Email ID</td>
+            <td class="auto-style3">Email ID</td>
             <td class="auto-style6">
                 <asp:TextBox ID="TextBoxEmail" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style17">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Email must be required" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Enter Valid Email ID" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">Password</td>
+            <td class="auto-style3">Password</td>
             <td class="auto-style6">
                 <asp:TextBox ID="TextBoxPass" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px" TextMode="Password"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style17">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxPass" ErrorMessage="Password must be required" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">Conform Password</td>
+            <td class="auto-style3">Conform Password</td>
             <td class="auto-style6">
                 <asp:TextBox ID="TextBoxRPass" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px" TextMode="Password"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style17">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxRPass" ErrorMessage="Confirm Password  must be required" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPass" ControlToValidate="TextBoxRPass" ErrorMessage="Both Password must be same" Font-Size="Medium" ForeColor="Red"></asp:CompareValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">Country</td>
+            <td class="auto-style3">Country</td>
             <td class="auto-style6">
                 <asp:DropDownList ID="DropDownListCountry" runat="server" Font-Names="Times New Roman" Font-Size="Large" Width="180px" CssClass="auto-style10">
                     <asp:ListItem>Select Country</asp:ListItem>
@@ -138,7 +150,7 @@
                     <asp:ListItem>Germany</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td>
+            <td class="auto-style17">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DropDownListCountry" ErrorMessage="Country must be required" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red" InitialValue="Select Country"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -167,7 +179,7 @@
             <td class="auto-style6">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
-            <td>&nbsp;</td>
+            <td class="auto-style17">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
@@ -175,7 +187,7 @@
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" Height="40px" Width="80px" Font-Bold="True" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="Reset1" class="auto-style5" type="reset" value="reset" /></td>
-            <td>&nbsp;</td>
+            <td class="auto-style17">&nbsp;</td>
         </tr>
     </table>
     <br />

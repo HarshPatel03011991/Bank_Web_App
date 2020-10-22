@@ -10,12 +10,12 @@
     <link href="MyStyleSheet.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .auto-style1 {
-            width: 627px;
-            text-align: left;
+            width: 879px;
+            text-align: center;
         }
         .auto-style2 {
-            width: 649px;
-            text-align: left;
+            width: 877px;
+            text-align: center;
         }
     </style>
 </head>
@@ -24,7 +24,7 @@
        
     <form id="form1" runat="server">
         
-         <div class="header" style="background-image: url('/Images/Back_Ground_Image.JPG')">
+         <div class="header" style="background-image: none">
               <h1 class="auto-style1">Welcome</h1>
               <p class="auto-style2"><strong>Bank Web Application</strong></p>
         </div>

@@ -10,14 +10,25 @@
         .auto-style3 {
             text-align: center;
         }
+    .auto-style4 {
+        width: 843px;
+        text-align: left;
+    }
+    .auto-style5 {
+        text-align: left;
+        width: 136px;
+    }
+    .auto-style6 {
+        width: 136px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         <br />
-        <table class="auto-style1">
+        <table class="auto-style4">
             <tr>
-                <td class="auto-style2"><strong>Contact No</strong></td>
+                <td class="auto-style5"><strong>Contact No</strong></td>
                 <td class="auto-style3">
                     <asp:TextBox ID="TextBox_Search_Contact" runat="server"></asp:TextBox>
                 </td>
@@ -26,7 +37,7 @@
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

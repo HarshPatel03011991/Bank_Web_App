@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Bank_Web_App.Home" MasterPageFile ="~/MasterPage.Master"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat=server>
-        <table class="auto-style1">
+        <table class="auto-style4">
             <tr>
                 <td class="auto-style2">
                     <asp:Button ID="Button1" runat="server" Height="60px" OnClick="Button1_Click" Text="Home" Width="120px" Font-Bold="True" />
@@ -38,5 +38,9 @@
             font-size: large;
             text-decoration: underline;
         }
+    .auto-style4 {
+        width: 902px;
+        text-align: left;
+    }
     </style>
 </asp:Content>

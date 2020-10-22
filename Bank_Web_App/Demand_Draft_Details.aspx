@@ -9,7 +9,8 @@
         }
         .auto-style3 {
             text-align: right;
-        }
+        width: 812px;
+    }
         .auto-style5 {
             text-align: center;
         }
@@ -17,20 +18,25 @@
             text-align: center;
             font-size: large;
         }
-        .auto-style7 {
-            height: 29px;
-        }
-        .auto-style8 {
-            text-align: center;
-            height: 29px;
-        }
+        .auto-style9 {
+        width: 812px;
+    }
+    .auto-style10 {
+        height: 26px;
+        width: 812px;
+        text-align: left;
+    }
+    .auto-style11 {
+        width: 883px;
+        text-align: left;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <br />
     <br />
-    <table class="auto-style1">
+    <table class="auto-style11">
         <tr>
             <td>&nbsp;</td>
             <td class="auto-style6"><strong>Demand Draft</strong></td>
@@ -43,14 +49,14 @@
             <td class="auto-style5">
                 <asp:TextBox ID="TextBox_Catch_Mobile_No" runat="server" BackColor="#CCCCFF" BorderColor="White"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style9">&nbsp;</td>
         </tr>
         <tr>
             <td>In Favour of</td>
             <td class="auto-style5">
                 <asp:TextBox ID="TextBox_In_Favour_of" runat="server"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style9">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox_In_Favour_of" ErrorMessage="Name Requird For Favour Of" Font-Names="Times New Roman" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -59,7 +65,7 @@
             <td class="auto-style5">
                 <asp:TextBox ID="TextBox_Payable_At" runat="server"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style9">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox_Payable_At" ErrorMessage="Name Requird For Payable At" Font-Names="Times New Roman" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -68,7 +74,7 @@
             <td class="auto-style5">
                 <asp:TextBox ID="TextBox_Amout_Number" runat="server"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style9">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox_Amout_Number" ErrorMessage="Amount must be required" Font-Names="Times New Roman" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -77,7 +83,7 @@
             <td class="auto-style5">
                 <asp:TextBox ID="TextBox_Amount_In_Words" runat="server"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style9">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox_Amount_In_Words" ErrorMessage="Amount in words must be required" Font-Names="Times New Roman" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -86,7 +92,7 @@
             <td class="auto-style2">
                 <asp:TextBox ID="TextBox_Catch_Balance" runat="server" BackColor="#CCCCFF" ReadOnly="True" Visible="False"></asp:TextBox>
             </td>
-            <td class="auto-style2"></td>
+            <td class="auto-style10"></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
@@ -94,7 +100,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" Font-Bold="True" Height="40px" Width="80px" />
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style9">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>

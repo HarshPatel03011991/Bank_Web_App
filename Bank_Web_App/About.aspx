@@ -7,10 +7,14 @@
         .auto-style2 {
             text-align: center;
         }
+    .auto-style3 {
+        width: 902px;
+        text-align: left;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style1">
+    <table class="auto-style3">
         <tr>
             <td class="auto-style2">
                 <asp:Button ID="Button1" runat="server" Height="60px" OnClick="Button1_Click" Text="Home" Width="120px" Font-Bold="True" />

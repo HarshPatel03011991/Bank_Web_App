@@ -8,19 +8,19 @@
         width: 347px;
     }
     .auto-style3 {
-        width: 347px;
+        width: 326px;
         text-align: center;
         height: 44px;
             font-size: x-large;
         }
     .auto-style4 {
-        width: 300px;
+        width: 240px;
     }
     .auto-style7 {
-            width: 347px;
-            height: 26px;
-            text-align: center;
-        }
+        width: 326px;
+        height: 26px;
+        text-align: center;
+    }
     .auto-style8 {
         height: 26px;
     }
@@ -29,7 +29,7 @@
         height: 44px;
     }
     .auto-style11 {
-        width: 300px;
+        width: 240px;
         height: 26px;
         text-align: right;
         font-size: large;
@@ -37,20 +37,24 @@
     .auto-style12 {
         font-size: large;
     }
-    .auto-style13 {
-        width: 347px;
+    .auto-style14 {
+        width: 240px;
+        height: 44px;
+    }
+    .auto-style15 {
+        width: 895px;
         text-align: left;
     }
-    .auto-style14 {
-        width: 300px;
-        height: 44px;
+    .auto-style16 {
+        width: 326px;
+        text-align: left;
     }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br />
-<table class="auto-style1">
+<table class="auto-style15">
     <tr>
         <td class="auto-style14">&nbsp;</td>
         <td class="auto-style3"><strong>Employee Login Details </strong> </td>
@@ -78,12 +82,12 @@
     </tr>
     <tr>
         <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style2">&nbsp;</td>
+        <td class="auto-style16">&nbsp;</td>
         <td>&nbsp;</td>
     </tr>
     <tr>
         <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style13">
+        <td class="auto-style16">
             <asp:Button ID="Login" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Login_Click" Text="Login" Width="80px" style="height: 40px" Height="40px" Font-Bold="True" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Reset" runat="server" Font-Names="Times New Roman" Font-Size="Large" OnClick="Reset_Click" Text="Reset" Height="40px" Width="80px" Font-Bold="True" />

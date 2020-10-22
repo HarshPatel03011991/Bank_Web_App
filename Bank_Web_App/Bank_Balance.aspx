@@ -7,10 +7,6 @@
         .auto-style2 {
             width: 235px;
         }
-        .auto-style3 {
-            width: 235px;
-            height: 29px;
-        }
         .auto-style4 {
             height: 29px;
         }
@@ -21,20 +17,12 @@
             height: 29px;
             width: 300px;
         }
-        .auto-style7 {
-            width: 235px;
-            height: 26px;
-        }
         .auto-style8 {
             width: 300px;
             height: 26px;
         }
         .auto-style9 {
             height: 26px;
-        }
-        .auto-style10 {
-            width: 235px;
-            height: 8px;
         }
         .auto-style11 {
             width: 300px;
@@ -43,17 +31,37 @@
         .auto-style12 {
             height: 8px;
         }
+    .auto-style13 {
+        width: 904px;
+        text-align: left;
+    }
+    .auto-style14 {
+        width: 259px;
+        text-align: left;
+    }
+    .auto-style15 {
+        width: 259px;
+        height: 8px;
+    }
+    .auto-style16 {
+        height: 29px;
+        width: 259px;
+    }
+    .auto-style17 {
+        width: 259px;
+        height: 26px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style1">
+    <table class="auto-style13">
         <tr>
-            <td class="auto-style10"></td>
+            <td class="auto-style15"></td>
             <td class="auto-style11"></td>
             <td class="auto-style12"></td>
         </tr>
         <tr>
-            <td class="auto-style3">Enter Customer Contact No</td>
+            <td class="auto-style16">Enter Customer Contact No</td>
             <td class="auto-style6">
                 <asp:TextBox ID="TextBox1" runat="server" Width="228px"></asp:TextBox>
             </td>
@@ -64,12 +72,12 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style7"></td>
+            <td class="auto-style17"></td>
             <td class="auto-style8"></td>
             <td class="auto-style9"></td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style14">&nbsp;</td>
             <td class="auto-style5">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" Font-Bold="True" Height="40px" Width="80px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

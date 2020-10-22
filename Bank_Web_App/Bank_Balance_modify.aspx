@@ -49,6 +49,10 @@
             width: 82px;
             height: 19px;
         }
+    .auto-style16 {
+        width: 740px;
+        text-align: left;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -56,11 +60,11 @@
     <br />
     Welcome&nbsp;    <asp:Label ID="Label_welcome" runat="server"></asp:Label>
     <br />
-    <table class="auto-style2">
+    <table class="auto-style16">
         <tr>
             <td class="auto-style13">&nbsp;</td>
             <td class="auto-style14">
-             &nbsp;</td>
+                &nbsp;</td>
             <td class="auto-style15"></td>
             <td class="auto-style15"></td>
         </tr>
